@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly website built with HTML, CSS, JavaScript, and GitHub Pages." />
+  <title>My First Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">MyWebsite</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container">
+        <p class="eyebrow">Beginner-friendly website</p>
+        <h1>Welcome to my first website</h1>
+        <p class="hero-text">This simple site uses HTML for structure, CSS for styling, and JavaScript for interactivity. It is also ready to publish with GitHub Pages.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container grid-2">
+        <div>
+          <h2>About this site</h2>
+          <p>This starter project shows how to build a clean homepage with navigation and a contact section. It follows responsive design so it works on mobile and desktop.</p>
+        </div>
+        <div class="card">
+          <h3>What you will learn</h3>
+          <ul>
+            <li>How to structure an HTML page.</li>
+            <li>How to add basic CSS styling.</li>
+            <li>How to use JavaScript for menu toggling and form validation.</li>
+            <li>How to publish on GitHub Pages.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Use the form below to test interaction. In a real project, you would connect it to an email service or backend.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required minlength="2" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required minlength="10"></textarea>
+
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MyWebsite. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
